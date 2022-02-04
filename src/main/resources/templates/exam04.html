@@ -6,10 +6,12 @@
 </head>
 <body>
 <!-- ボディ要素 -->
-<form th:action="@{exam04/result}">
-名前：<input type="text" name = "name"><br>
-年齢：<input type="text" name = "age"><br>
-コメント：<textarea cols=30 rows=5 name="コメント"><br>
+<form th:action="@{exam04/result}"
+	 method="POST">
+名前：<input type="text" name = "name" ><br>
+年齢：<input type="text" name = "age" ><br>
+コメント：<br>
+<textarea cols=30 rows=5 name="comment" ></textarea><br>
 
 <button>登録</button>
 
